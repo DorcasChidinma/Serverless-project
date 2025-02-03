@@ -15,7 +15,7 @@ def lambda_handler(event, context):
 def page_router(httpmethod, querystring, formbody):
     if httpmethod == 'GET':
         try:
-            with open('contactus.html', 'r') as htmlFile:
+            with open('contact_us.html', 'r') as htmlFile:
                 htmlContent = htmlFile.read()
             return {
                 'statusCode': 200,
